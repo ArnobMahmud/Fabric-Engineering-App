@@ -18,7 +18,7 @@ class CustomAppBar extends StatelessWidget {
           color: Color.fromARGB(255, 41, 51, 104),
         ),
       ),
-      backgroundColor: const Color(0xffcfbaba),
+      backgroundColor: const Color(0xffcfbaba).withOpacity(.2),
       title: Expanded(
         flex: 0,
         child: AutoSizeText(
