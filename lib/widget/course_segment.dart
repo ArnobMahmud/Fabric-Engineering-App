@@ -67,6 +67,7 @@ class CourseSegment extends StatelessWidget {
                           color: const Color.fromARGB(159, 87, 68, 94),
                         ),
                         maxLines: 2,
+                        overflow: TextOverflow.clip,
                       ),
                     ),
                     AutoSizeText(

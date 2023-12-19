@@ -32,7 +32,7 @@ class _LectureSegmentState extends State<LectureSegment> {
       child: Container(
         margin: const EdgeInsets.fromLTRB(0, 5, 10, 10),
         padding: const EdgeInsets.all(10),
-        height: 170,
+        height: 150,
         width: double.infinity,
         decoration: const BoxDecoration(
           border: Border(
