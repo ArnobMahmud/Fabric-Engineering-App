@@ -41,23 +41,49 @@ class SemesterSegment extends StatelessWidget {
           ],
         ),
         padding: const EdgeInsets.all(20),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        child: Stack(
           children: [
-            Text(
-              semester!,
-              style: GoogleFonts.roboto(
-                fontSize: 36,
-                fontWeight: FontWeight.w400,
-                color: const Color.fromARGB(221, 94, 70, 102),
-              ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  semester!,
+                  style: GoogleFonts.roboto(
+                    fontSize: 36,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(221, 94, 70, 102),
+                  ),
+                ),
+                Text(
+                  course!,
+                  style: GoogleFonts.roboto(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(159, 70, 56, 75),
+                  ),
+                ),
+              ],
             ),
-            Text(
-              course!,
-              style: GoogleFonts.roboto(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                color: const Color.fromARGB(159, 70, 56, 75),
+            Positioned(
+              top: 0,
+              right: 0,
+              child: Container(
+                height: 50,
+                width: 50,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(20),
+                    bottomLeft: Radius.circular(30),
+                  ),
+                  color: Color.fromARGB(255, 153, 139, 137),
+                ),
+                child: const Center(
+                  child: Icon(
+                    Icons.ac_unit_rounded,
+                    size: 30,
+                    color: Color.fromARGB(255, 39, 60, 81),
+                  ),
+                ),
               ),
             ),
           ],

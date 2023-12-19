@@ -10,7 +10,7 @@ final List<Course> courses = [
   ),
   Course(
     id: 2,
-    name: 'Chemistry I',
+    name: 'Chemistry II',
     nav: '/chem2',
     lecturer: 'Sadia Mam, Farzana Mam.',
     courseCode: 'CHEM 103',
@@ -39,7 +39,7 @@ final List<Course> courses = [
   Course(
     id: 6,
     name: 'Polymer Science & Engineering (PSE) ',
-    nav: '/em',
+    nav: '/pse',
     lecturer: 'Parveen Mam, Mamun Sir.',
     courseCode: 'WPE 101',
   ),

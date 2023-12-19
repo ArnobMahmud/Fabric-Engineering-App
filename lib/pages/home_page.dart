@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                     color: Color.fromARGB(255, 249, 227, 161),
                     //color: Color.fromARGB(255, 237, 221, 165),
                     borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(150),
+                      topRight: Radius.circular(180),
                       bottomLeft: Radius.circular(200),
                     ),
                   ),
@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
-                color: Color(0xffcfb5e8),
+                color: Color.fromARGB(255, 234, 214, 252),
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(50),
                 ),

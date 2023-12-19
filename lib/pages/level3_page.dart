@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:fabric_engineering_app/widget/semester_segment.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,7 +8,7 @@ class Level3Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffe0e0e0),
+      backgroundColor: const Color(0xffe0e0e0),
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
@@ -18,7 +16,7 @@ class Level3Page extends StatelessWidget {
           },
           icon: const Icon(Icons.arrow_back_ios),
         ),
-        backgroundColor: Color(0xffe0e0e0),
+        backgroundColor: const Color(0xffe0e0e0),
         title: Text(
           "Level 3",
           style: GoogleFonts.zillaSlab(

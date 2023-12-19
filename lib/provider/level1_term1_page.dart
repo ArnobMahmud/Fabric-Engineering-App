@@ -1,6 +1,5 @@
 import 'package:fabric_engineering_app/widget/custom_app_bar.dart';
 import 'package:flutter/material.dart';
-
 import '../db/Level1/term1.dart';
 import '../widget/course_segment.dart';
 

@@ -13,8 +13,8 @@ class ErrorPage extends StatelessWidget {
         children: [
           SvgPicture.asset(
             'images/error.svg',
-            height: 200,
-            width: 200,
+            height: 300,
+            width: 300,
           ),
           const SizedBox(
             height: 60,
@@ -24,7 +24,7 @@ class ErrorPage extends StatelessWidget {
             style: GoogleFonts.roboto(
               fontSize: 30,
               fontWeight: FontWeight.w400,
-              color: const Color.fromARGB(159, 87, 68, 94),
+              color:const Color.fromARGB(159, 80, 58, 88),
             ),
           ),
         ],

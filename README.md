@@ -1,6 +1,7 @@
-# fabric_engineering_app
+# Fabric Engineering Application
 
-A new Flutter project.
+A departmentl project by Armob Mahmud.<br>
+Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME) 46th Batch's Departmental Resources Monitoring Application by Arnob Mahmud.
 
 ## Getting Started
 

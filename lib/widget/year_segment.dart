@@ -20,18 +20,19 @@ class YearSegment extends StatelessWidget {
       },
       child: Container(
         height: 150,
-        width: width * .75,
+        width: width * .85,
         margin: const EdgeInsets.fromLTRB(0, 20, 30, 5),
-        padding: const EdgeInsets.only(top: 10, bottom: 10),
+        //padding: const EdgeInsets.only(top: 10, bottom: 10),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(20),
+            bottomLeft: Radius.circular(100),
           ),
           color: Color(0xffe8d3b5),
           boxShadow: [
             BoxShadow(
               color: Color.fromARGB(245, 176, 154, 197),
-              spreadRadius: 5,
+              spreadRadius: 3,
               blurRadius: 5,
               offset: Offset(0, 3), // changes position of shadow
             ),
@@ -48,8 +49,52 @@ class YearSegment extends StatelessWidget {
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(100),
+                    bottomLeft: Radius.circular(100)
                   ),
                   color: Color.fromARGB(255, 153, 139, 137),
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 0,
+              right: 0,
+              child: Container(
+                height: 50,
+                width: 50,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                  ),
+                  color: Color.fromARGB(255, 153, 139, 137),
+                ),
+                child: const Center(
+                  child: Icon(
+                    Icons.ac_unit_rounded,
+                    size: 30,
+                    color: Color.fromARGB(255, 39, 60, 81),
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 0,
+              right: 0,
+              child: Container(
+                height: 50,
+                width: 50,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(20),
+                    bottomLeft: Radius.circular(30),
+                  ),
+                  color: Color.fromARGB(255, 153, 139, 137),
+                ),
+                child: const Center(
+                  child: Icon(
+                    Icons.ac_unit_rounded,
+                    size: 30,
+                    color: Color.fromARGB(255, 39, 60, 81),
+                  ),
                 ),
               ),
             ),

@@ -38,6 +38,7 @@ class Course {
   String? name;
   String? courseCode;
   String? lecturer;
+  String? details;
 
   Course({
     this.id,

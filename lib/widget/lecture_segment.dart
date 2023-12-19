@@ -32,10 +32,20 @@ class _LectureSegmentState extends State<LectureSegment> {
       child: Container(
         margin: const EdgeInsets.fromLTRB(0, 5, 10, 10),
         padding: const EdgeInsets.all(10),
-        height: 150,
+        height: 170,
         width: double.infinity,
         decoration: const BoxDecoration(
-          color: Color.fromRGBO(234, 202, 199, 1),
+          border: Border(
+            bottom: BorderSide(
+              color: Color.fromARGB(133, 91, 87, 87),
+              width: 2,
+            ),
+            top: BorderSide(
+              color: Color.fromARGB(133, 91, 87, 87),
+              width: 1,
+            ),
+          ),
+          color: Color.fromARGB(223, 231, 230, 231),
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(30),
             bottomLeft: Radius.circular(30),
@@ -68,7 +78,7 @@ class _LectureSegmentState extends State<LectureSegment> {
                             style: GoogleFonts.roboto(
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
-                              color: const Color.fromARGB(159, 87, 68, 94),
+                              color: const Color.fromARGB(188, 87, 68, 94),
                             ),
                             maxLines: 2,
                           ),
@@ -79,7 +89,7 @@ class _LectureSegmentState extends State<LectureSegment> {
                               style: GoogleFonts.roboto(
                                 fontSize: 22,
                                 fontWeight: FontWeight.w600,
-                                color: const Color.fromARGB(159, 87, 68, 94),
+                                color: const Color.fromARGB(234, 87, 68, 94),
                               ),
                               maxLines: 3,
                             ),
