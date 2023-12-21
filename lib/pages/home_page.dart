@@ -1,9 +1,9 @@
-import 'package:fabric_engineering_app/db/year.dart';
+import 'package:fabric_engineering_app/db/category_data.dart';
+import 'package:fabric_engineering_app/widget/category.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../widget/year_segment.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     //final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
+    final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 249, 213),
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
         title: Text(
           "Fabric Engineering",
           style: GoogleFonts.roboto(
-            fontSize: 36,
+            fontSize: 30,
             fontWeight: FontWeight.w400,
             color: const Color.fromARGB(159, 87, 68, 94),
           ),
@@ -128,29 +129,36 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
-                color: Color(0xffe2dfd2),
+                color: Color(0xffEFE1D1),
                 borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(50),
+                  topRight: Radius.circular(30),
                 ),
               ),
               child: ClipRRect(
                 borderRadius: const BorderRadius.only(
-                  topRight: Radius.circular(50),
+                  topRight: Radius.circular(30),
                 ),
-                child: ListView.builder(
-                  //scrollDirection: Axis.horizontal,
-                  itemCount: year.length,
+                child: GridView.builder(
+                  padding: const EdgeInsets.all(15),
+                  itemCount: categoryData.length,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisSpacing: 20,
+                    mainAxisSpacing: 20,
+                    crossAxisCount: 2,
+                    childAspectRatio: aspectRatio,
+                  ),
                   itemBuilder: (BuildContext context, int index) {
-                    final sem = year[index];
-                    return YearSegment(
-                      name: sem.name,
-                      nav: sem.nav,
+                    return Category(
+                      title: categoryData[index].title,
+                      subTitle: categoryData[index].subTitle,
+                      imgData: categoryData[index].imgData,
+                      nav: categoryData[index].nav,
                     );
                   },
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

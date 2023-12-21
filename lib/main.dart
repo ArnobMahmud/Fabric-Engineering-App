@@ -1,3 +1,4 @@
+import 'package:fabric_engineering_app/pages/resources_page.dart';
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
 import 'pages/level1_page.dart';
@@ -61,6 +62,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
+        '/res' : (context) => const ResourcePage(),
         '/level1': (context) => const Level1Page(),
         '/level2': (context) => const Level2Page(),
         '/level3': (context) => const Level3Page(),

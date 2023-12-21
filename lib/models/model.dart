@@ -48,3 +48,17 @@ class Course {
     this.lecturer,
   });
 }
+
+class Category {
+  String? title;
+  String? subTitle;
+  String? imgData;
+  String? nav;
+
+  Category({
+    this.imgData,
+    this.subTitle,
+    this.title,
+    this.nav,
+  });
+}

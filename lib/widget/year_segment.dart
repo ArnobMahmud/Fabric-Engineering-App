@@ -19,22 +19,20 @@ class YearSegment extends StatelessWidget {
         Navigator.pushNamed(context, nav!);
       },
       child: Container(
-        height: 150,
-        width: width * .85,
-        margin: const EdgeInsets.fromLTRB(0, 20, 30, 5),
-        //padding: const EdgeInsets.only(top: 10, bottom: 10),
+        height: 130,
+        width: width,
+        margin: const EdgeInsets.fromLTRB(0, 10, 20, 10),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(20),
-            bottomLeft: Radius.circular(50),
           ),
           color: Color(0xffe8d3b5),
           boxShadow: [
             BoxShadow(
               color: Color.fromARGB(245, 176, 154, 197),
-              spreadRadius: 1,
-              blurRadius: 5,
-              offset: Offset(1, 3), // changes position of shadow
+              spreadRadius: 2,
+              blurRadius: 3,
+              offset: Offset(1, 2), // changes position of shadow
             ),
           ],
         ),
@@ -45,37 +43,15 @@ class YearSegment extends StatelessWidget {
               left: 0,
               child: Container(
                 height: 150,
-                width: 120,
+                width: 150,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(60),
-                    bottomLeft: Radius.circular(50)
                   ),
-                  color: Color.fromARGB(255, 153, 139, 137),
+                  color: Color(0xffB0A4A4),
                 ),
               ),
             ),
-            // Positioned(
-            //   bottom: 0,
-            //   right: 0,
-            //   child: Container(
-            //     height: 50,
-            //     width: 50,
-            //     decoration: const BoxDecoration(
-            //       borderRadius: BorderRadius.only(
-            //         topLeft: Radius.circular(30),
-            //       ),
-            //       color: Color.fromARGB(255, 153, 139, 137),
-            //     ),
-            //     child: const Center(
-            //       child: Icon(
-            //         Icons.ac_unit_rounded,
-            //         size: 30,
-            //         color: Color.fromARGB(255, 39, 60, 81),
-            //       ),
-            //     ),
-            //   ),
-            // ),
             Positioned(
               top: 0,
               right: 0,
@@ -85,7 +61,7 @@ class YearSegment extends StatelessWidget {
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(20),
-                    bottomLeft: Radius.circular(30),
+                    bottomLeft: Radius.circular(20),
                   ),
                   color: Color.fromARGB(255, 153, 139, 137),
                 ),
@@ -105,7 +81,7 @@ class YearSegment extends StatelessWidget {
                   width: 10,
                 ),
                 SvgPicture.asset(
-                  'images/sem.svg',
+                  'images/chart.svg',
                   height: 80,
                   width: 80,
                 ),
