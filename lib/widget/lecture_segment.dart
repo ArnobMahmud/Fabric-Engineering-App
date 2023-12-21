@@ -45,7 +45,7 @@ class _LectureSegmentState extends State<LectureSegment> {
               width: 1,
             ),
           ),
-          color: Color.fromARGB(223, 231, 230, 231),
+          color: Color(0xffcfbaba),
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(30),
             bottomLeft: Radius.circular(30),

@@ -9,7 +9,7 @@ class Level2Term2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:const Color(0xffcfbaba),
+      backgroundColor: const Color(0xffe2dfd2),
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(60.0),
         child: CustomAppBar(title: 'Level 2 - Term 2'),

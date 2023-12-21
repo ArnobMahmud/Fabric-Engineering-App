@@ -13,7 +13,7 @@ class _YM1ResourcesState extends State<YM1Resources> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color(0xffcfbaba),
+      backgroundColor: Color(0xffe2dfd2),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.0),
         child: CustomAppBar(title: 'Yarn Manufacturing I'),

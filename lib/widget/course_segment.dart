@@ -24,11 +24,11 @@ class CourseSegment extends StatelessWidget {
         height: 150,
         width: double.infinity,
         decoration: const BoxDecoration(
-          color: Color.fromRGBO(234, 199, 221, 1),
+          color: Color(0xffcfbaba),
           border: Border(
             bottom: BorderSide(
               color: Color.fromARGB(133, 91, 87, 87),
-              width: 2,
+              width: 1,
             ),
             top: BorderSide(
               color: Color.fromARGB(133, 91, 87, 87),

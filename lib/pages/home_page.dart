@@ -40,8 +40,8 @@ class HomePage extends StatelessWidget {
                     color: Color.fromARGB(255, 249, 227, 161),
                     //color: Color.fromARGB(255, 237, 221, 165),
                     borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(180),
-                      bottomLeft: Radius.circular(200),
+                      topLeft: Radius.circular(180),
+                      //bottomLeft: Radius.circular(200),
                     ),
                   ),
                 ),
@@ -77,6 +77,7 @@ class HomePage extends StatelessWidget {
               ),
               Positioned(
                 bottom: 0,
+                //right: MediaQuery.of(context).size.width * .50,
                 right: 0,
                 child: Container(
                   height: 30,
@@ -115,7 +116,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     height: 250,
                     width: width * .45,
-                    child: SvgPicture.asset('images/town.svg'),
+                    child: SvgPicture.asset('images/snow.svg'),
                   ),
                 ],
               ),
@@ -127,7 +128,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 234, 214, 252),
+                color: Color(0xffe2dfd2),
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(50),
                 ),

@@ -18,14 +18,14 @@ class CustomAppBar extends StatelessWidget {
           color: Color.fromARGB(255, 41, 51, 104),
         ),
       ),
-      backgroundColor: const Color(0xffcfbaba).withOpacity(.2),
+      backgroundColor: const Color(0xffe2dfd2),
       title: Expanded(
         flex: 0,
         child: AutoSizeText(
           title!,
           maxFontSize: 26,
           minFontSize: 24,
-          style: GoogleFonts.zillaSlab(
+          style: GoogleFonts.roboto(
             textStyle: const TextStyle(
               fontSize: 24,
               color: Color.fromARGB(255, 41, 51, 104),

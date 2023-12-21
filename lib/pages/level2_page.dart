@@ -19,7 +19,7 @@ class Level2Page extends StatelessWidget {
         backgroundColor: const Color(0xffe0e0e0),
         title: Text(
           "Level 2",
-          style: GoogleFonts.zillaSlab(
+          style: GoogleFonts.roboto(
             textStyle: const TextStyle(
               fontSize: 30,
               color: Color.fromARGB(255, 41, 51, 104),
