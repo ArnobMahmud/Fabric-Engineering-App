@@ -20,7 +20,7 @@ final List<Course> courses = [
     name: 'Wet Processing (WP) II',
     nav: '/wp2',
     lecturer: 'Tania Mam, Shohag Sir.',
-    courseCode: ' WPE 311',
+    courseCode: 'WPE 311',
   ),
   Course(
     id: 4,

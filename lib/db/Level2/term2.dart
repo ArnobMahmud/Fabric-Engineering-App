@@ -3,7 +3,7 @@ import '../../models/model.dart';
 final List<Course> courses = [
   Course(
     id: 1,
-    name: 'Textile Physics',
+    name: 'Textile Physics (TP)',
     nav: '/tp',
     lecturer: 'Jalal Sir, Shuvo Sir.',
     courseCode: 'YE 209',

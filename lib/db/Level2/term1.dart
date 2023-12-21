@@ -3,14 +3,14 @@ import '../../models/model.dart';
 final List<Course> courses = [
   Course(
     id: 1,
-    name: 'Yarn Manufacturing I',
+    name: 'Yarn Manufacturing (YM) I',
     nav: '/ym1',
     lecturer: 'Rubel Sir, Masum Sir.',
     courseCode: 'YE 213',
   ),
   Course(
     id: 2,
-    name: 'Weaving Preparatory Process',
+    name: 'Weaving Preparatory Process (WPP)',
     nav: '/wpp',
     lecturer: 'Mohaddes Sir, Mamun Sir',
     courseCode: 'FE 203',

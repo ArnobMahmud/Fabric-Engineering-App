@@ -34,13 +34,18 @@ import 'resources/Level2/Term2/feee_resources.dart';
 import 'resources/Level2/Term2/fmkt_resources.dart';
 import 'resources/Level2/Term2/tp_resources.dart';
 import 'resources/Level2/Term2/wp1_resources.dart';
-import 'resources/Level2/Term2/wvg_resources.dart';
+import 'resources/Level2/Term2/wvg1_resources.dart';
 import 'resources/Level3/Term1/am2_resources.dart';
 import 'resources/Level3/Term1/econ_resources.dart';
 import 'resources/Level3/Term1/im_resources.dart';
 import 'resources/Level3/Term1/knit1_resources.dart';
 import 'resources/Level3/Term1/wp2_resources.dart';
 import 'resources/Level3/Term1/ym2_resources.dart';
+import 'resources/Level3/Term2/ace_resources.dart';
+import 'resources/Level3/Term2/acfm_resources.dart';
+import 'resources/Level3/Term2/acm_resources.dart';
+import 'resources/Level3/Term2/fsd_resources.dart';
+import 'resources/Level3/Term2/wvg2_resources.dart';
 
 void main() => runApp(const MyApp());
 
@@ -97,6 +102,11 @@ class MyApp extends StatelessWidget {
         '/wp2': (context) => const WP2Resources(),
         '/econ': (context) => const EconResources(),
         '/im': (context) => const IMResources(),
+        '/acfm': (context) => const ACFMResources(),
+        '/ace': (context) => const ACEResources(),
+        '/wv2': (context) => const Wvg2Resources(),
+        '/fsd': (context) => const FSDResources(),
+        '/acm': (context) => const ACMResources(),
       },
     );
   }
