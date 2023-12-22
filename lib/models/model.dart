@@ -62,3 +62,39 @@ class Category {
     this.nav,
   });
 }
+
+class Exams {
+  String? title;
+  String? imgData;
+  String? nav;
+
+  Exams({
+    this.imgData,
+    this.title,
+    this.nav,
+  });
+}
+
+class Routine {
+  String? name;
+  List<Semester>? semester;
+
+  Routine({
+    this.name,
+    this.semester,
+  });
+}
+
+class Semester {
+  String? name;
+  String? date;
+  String? code;
+  String? time;
+
+  Semester({
+    this.code,
+    this.date,
+    this.name,
+    this.time,
+  });
+}

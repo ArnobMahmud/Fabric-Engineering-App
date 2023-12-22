@@ -30,16 +30,17 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Stack(
+            alignment: Alignment.topCenter,
             children: [
               Positioned(
                 top: 0,
                 right: 0,
                 child: Container(
-                  height: 200,
-                  width: 250,
+                  height: 180,
+                  width: width * .45,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 249, 227, 161),
-                    //color: Color.fromARGB(255, 237, 221, 165),
+                    //color: Color.fromARGB(255, 249, 227, 161),
+                    color: Color(0xffEFE1D1),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(180),
                       //bottomLeft: Radius.circular(200),
@@ -51,10 +52,10 @@ class HomePage extends StatelessWidget {
                 bottom: 0,
                 left: 0,
                 child: Container(
-                  height: 200,
-                  width: 150,
+                  height: 180,
+                  width: width * .35,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 249, 227, 161),
+                    color: Color(0xffEFE1D1),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(150),
                       bottomRight: Radius.circular(150),
@@ -69,9 +70,11 @@ class HomePage extends StatelessWidget {
                   height: 30,
                   width: 30,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 249, 227, 161),
+                    // color: Color.fromARGB(255, 249, 227, 161),
+                    color: Color(0xffEFE1D1),
                     borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(50),
+                      bottomLeft: Radius.circular(50),
+                      topRight: Radius.circular(50),
                     ),
                   ),
                 ),
@@ -84,9 +87,10 @@ class HomePage extends StatelessWidget {
                   height: 30,
                   width: 30,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 249, 227, 161),
+                    color: Color(0xffEFE1D1),
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50),
+                      topRight: Radius.circular(50),
+                      bottomLeft: Radius.circular(50),
                     ),
                   ),
                 ),
@@ -115,7 +119,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 250,
+                    //color: Colors.blue,
+                    height: 220,
                     width: width * .45,
                     child: SvgPicture.asset('images/snow.svg'),
                   ),
@@ -145,7 +150,7 @@ class HomePage extends StatelessWidget {
                     crossAxisSpacing: 20,
                     mainAxisSpacing: 20,
                     crossAxisCount: 2,
-                    childAspectRatio: aspectRatio,
+                    childAspectRatio: aspectRatio / .95,
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     return Category(

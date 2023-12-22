@@ -1,10 +1,12 @@
-import 'package:fabric_engineering_app/pages/resources_page.dart';
 import 'package:flutter/material.dart';
+import 'pages/exam_page.dart';
 import 'pages/home_page.dart';
+import 'pages/lab_page.dart';
 import 'pages/level1_page.dart';
 import 'pages/level2_page.dart';
 import 'pages/level3_page.dart';
 import 'pages/level4_page.dart';
+import 'pages/resources_page.dart';
 import 'provider/level1_term1_page.dart';
 import 'provider/level1_term2_page.dart';
 import 'provider/level2_term1_page.dart';
@@ -57,12 +59,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        applyElevationOverlayColor: false,
+      ),
       debugShowCheckedModeBanner: false,
       title: 'Fabric Engineering Application',
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/res' : (context) => const ResourcePage(),
+        '/res': (context) => const ResourcePage(),
+        '/rot': (context) => const ExamPage(),
+        '/lab': (context) => const LabPage(),
         '/level1': (context) => const Level1Page(),
         '/level2': (context) => const Level2Page(),
         '/level3': (context) => const Level3Page(),
@@ -109,6 +116,7 @@ class MyApp extends StatelessWidget {
         '/wv2': (context) => const Wvg2Resources(),
         '/fsd': (context) => const FSDResources(),
         '/acm': (context) => const ACMResources(),
+       
       },
     );
   }
