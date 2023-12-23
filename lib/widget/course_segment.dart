@@ -40,8 +40,7 @@ class CourseSegment extends StatelessWidget {
             bottomLeft: Radius.circular(30),
           ),
         ),
-        child: Expanded(
-          child: Row(
+        child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SvgPicture.asset(
@@ -100,7 +99,7 @@ class CourseSegment extends StatelessWidget {
             ],
           ),
         ),
-      ),
+    
     );
   }
 }

@@ -51,66 +51,71 @@ class _LectureSegmentState extends State<LectureSegment> {
             bottomLeft: Radius.circular(30),
           ),
         ),
-        child: Expanded(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SvgPicture.asset(
-                'images/video.svg',
-                height: 70,
-                width: 70,
-              ),
-              const SizedBox(
-                width: 20,
-              ),
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            widget.value!.date!,
-                            style: GoogleFonts.roboto(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                              color: const Color.fromARGB(188, 87, 68, 94),
-                            ),
-                            maxLines: 2,
-                          ),
-                          Expanded(
-                            flex: 0,
-                            child: Text(
-                              widget.value!.discussedTopics!,
-                              style: GoogleFonts.roboto(
-                                fontSize: 22,
-                                fontWeight: FontWeight.w600,
-                                color: const Color.fromARGB(234, 87, 68, 94),
+        child: Flex(
+          direction: Axis.vertical,
+          children: [
+            Expanded(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SvgPicture.asset(
+                    'images/video.svg',
+                    height: 70,
+                    width: 70,
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                widget.value!.date!,
+                                style: GoogleFonts.roboto(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color.fromARGB(188, 87, 68, 94),
+                                ),
+                                maxLines: 2,
                               ),
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                            ),
+                              Expanded(
+                                flex: 0,
+                                child: Text(
+                                  widget.value!.discussedTopics!,
+                                  style: GoogleFonts.roboto(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color.fromARGB(234, 87, 68, 94),
+                                  ),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              Text(
+                                widget.value!.lecturer!,
+                                style: GoogleFonts.roboto(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                  color: const Color.fromARGB(159, 87, 68, 94),
+                                ),
+                              ),
+                            ],
                           ),
-                          Text(
-                            widget.value!.lecturer!,
-                            style: GoogleFonts.roboto(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                              color: const Color.fromARGB(159, 87, 68, 94),
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,22 +18,24 @@ class CustomAppBar extends StatelessWidget {
         ),
       ),
       backgroundColor: const Color(0xffe2dfd2),
-      title: Expanded(
-        flex: 0,
-        child: AutoSizeText(
-          title!,
-          maxFontSize: 26,
-          minFontSize: 24,
-          style: GoogleFonts.roboto(
-            textStyle: const TextStyle(
-              fontSize: 24,
-              color: Color.fromARGB(255, 41, 51, 104),
-              fontWeight: FontWeight.w400,
+      title: Flex(
+        direction: Axis.horizontal,
+        children: [
+          Expanded(
+            child: Text(
+              title!,
+              style: GoogleFonts.roboto(
+                textStyle: const TextStyle(
+                  fontSize: 24,
+                  color: Color.fromARGB(255, 41, 51, 104),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-        ),
+        ],
       ),
     );
   }

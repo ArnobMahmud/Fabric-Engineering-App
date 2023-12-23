@@ -144,13 +144,13 @@ class HomePage extends StatelessWidget {
                   topRight: Radius.circular(30),
                 ),
                 child: GridView.builder(
-                  padding: const EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(10),
                   itemCount: categoryData.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisSpacing: 20,
-                    mainAxisSpacing: 20,
+                    crossAxisSpacing: 15,
+                    mainAxisSpacing: 10,
                     crossAxisCount: 2,
-                    childAspectRatio: aspectRatio / .95,
+                    childAspectRatio: aspectRatio,
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     return Category(

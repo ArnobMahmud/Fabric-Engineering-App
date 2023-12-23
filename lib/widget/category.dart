@@ -23,8 +23,7 @@ class Category extends StatelessWidget {
         Navigator.pushNamed(context, nav!);
       },
       child: Container(
-        height: 100,
-        width: 200,
+        padding:const EdgeInsets.all(10),
         margin: const EdgeInsets.only(top: 5),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -46,10 +45,12 @@ class Category extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               SvgPicture.asset(
                 imgData!,
-                height: 100,
+                height: 90,
                 width: 100,
               ),
               const Spacer(
@@ -79,9 +80,6 @@ class Category extends StatelessWidget {
                   maxLines: 2,
                   textAlign: TextAlign.center,
                 ),
-              ),
-              const Spacer(
-                flex: 1,
               ),
             ],
           ),
