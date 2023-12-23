@@ -23,7 +23,7 @@ class Category extends StatelessWidget {
         Navigator.pushNamed(context, nav!);
       },
       child: Container(
-        padding:const EdgeInsets.all(10),
+        padding:const EdgeInsets.all(5),
         margin: const EdgeInsets.only(top: 5),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -59,10 +59,11 @@ class Category extends StatelessWidget {
               Text(
                 title!,
                 style: GoogleFonts.roboto(
-                  fontSize: 24,
+                  fontSize: 22,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff393646),
                 ),
+                textAlign: TextAlign.center,
                 maxLines: 2,
               ),
               const SizedBox(
