@@ -8,6 +8,7 @@ Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME)
 
 ![Capture](https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/688ad76d-12eb-4d30-9df2-fdb28c9f7b45)
 
+
 <table>
   <tr>
     <th>Home Screen</th>
@@ -42,7 +43,7 @@ Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME)
     </td>
   </tr>
   <tr>
-    <th>Exam Screen</th>th>
+    <th>Exam Screen</th>
     <th>Lab Screen</th>
   </tr>
   <tr>  

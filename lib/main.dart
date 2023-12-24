@@ -49,6 +49,15 @@ import 'resources/Level3/Term2/acfm_resources.dart';
 import 'resources/Level3/Term2/acm_resources.dart';
 import 'resources/Level3/Term2/fsd_resources.dart';
 import 'resources/Level3/Term2/wvg2_resources.dart';
+import 'resources/Level4/Term1/ftqc_resources.dart';
+import 'resources/Level4/Term1/knit2_resources.dart';
+import 'resources/Level4/Term1/sfp_resources.dart';
+import 'resources/Level4/Term1/soc_resources.dart';
+import 'resources/Level4/Term1/tam_resources.dart';
+import 'resources/Level4/Term2/es.dart';
+import 'resources/Level4/Term2/nwvn_resources.dart';
+import 'resources/Level4/Term2/ppc.dart';
+import 'resources/Level4/Term2/tt.dart';
 
 void main() => runApp(const MyApp());
 
@@ -116,7 +125,15 @@ class MyApp extends StatelessWidget {
         '/wv2': (context) => const Wvg2Resources(),
         '/fsd': (context) => const FSDResources(),
         '/acm': (context) => const ACMResources(),
-       
+        '/soc': (context) => const SocResources(),
+        '/tam': (context) => const TAMResources(),
+        '/knit2': (context) => const Knit2Resources(),
+        '/ftqc': (context) => const FTQCResources(),
+        '/sfp': (context) => const SFPResources(),
+        '/ppc': (context) => const PPCResources(),
+        '/nwvn': (context) => const NwvnResources(),
+        '/tt': (context) => const TTResources(),
+        '/es': (context) => const ESResources()
       },
     );
   }

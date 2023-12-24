@@ -47,7 +47,7 @@ class Level4Page extends StatelessWidget {
               },
               semester: 'Term 2',
               course:
-                  'Courses : Sociology, Fabric Testing & Quality Control (FTQC), Knitting(Knit) II, Special Fabric Production (SFP), Textile & Apparel Merchandizing (TAM).',
+                  'Courses : Nonwoven (NWvn), Technical Textile (TT), Environmental Studies (ES), Production Planning & Control (PPC).',
             ),
           ),
         ],

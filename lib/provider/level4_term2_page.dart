@@ -1,4 +1,4 @@
-import 'package:fabric_engineering_app/db/Level2/term2.dart';
+import 'package:fabric_engineering_app/db/Level4/term2.dart';
 import 'package:fabric_engineering_app/widget/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import '../widget/course_segment.dart';
@@ -12,7 +12,7 @@ class Level4Term2Page extends StatelessWidget {
       backgroundColor: const Color(0xffe2dfd2),
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(60.0),
-        child: CustomAppBar(title: 'Level 3 - Term 2'),
+        child: CustomAppBar(title: 'Level 4 - Term 2'),
       ),
       body: ListView.builder(
         itemCount: courses.length,
