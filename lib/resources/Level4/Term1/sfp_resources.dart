@@ -22,7 +22,7 @@ class _SFPResourcesState extends State<SFPResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'sfp4-1',
         ),
       ),
     );

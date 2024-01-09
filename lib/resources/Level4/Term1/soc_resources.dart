@@ -22,7 +22,7 @@ class _SocResourcesState extends State<SocResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'soc4-1',
         ),
       ),
     );

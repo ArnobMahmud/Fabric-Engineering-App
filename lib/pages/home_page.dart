@@ -1,5 +1,6 @@
 import 'package:fabric_engineering_app/db/category_data.dart';
 import 'package:fabric_engineering_app/widget/category.dart';
+import 'package:fabric_engineering_app/widget/drawer_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,6 +18,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 255, 249, 213),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 249, 213),
+        centerTitle: true,
         title: Text(
           "Fabric Engineering",
           style: GoogleFonts.roboto(
@@ -24,6 +26,43 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.w400,
             color: const Color.fromARGB(159, 87, 68, 94),
           ),
+        ),
+      ),
+      drawer: Drawer(
+        
+        backgroundColor: Colors.deepPurple[100],
+        child: ListView(
+          children: [
+            const DrawerHeader(
+              child: Text(
+                'F A B R I C\nE N G I N E E R I N G\nR E S O U R C E S',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            DrawerTile(
+              icon: Icons.settings,
+              title: 'Setting',
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
+            ),
+            DrawerTile(
+              icon: Icons.manage_accounts_sharp,
+              title: 'Developer',
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
+            ),
+          ],
         ),
       ),
       body: Column(

@@ -22,7 +22,7 @@ class _ESResourcesState extends State<ESResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'es4-2',
         ),
       ),
     );

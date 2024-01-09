@@ -22,7 +22,7 @@ class _Knit2ResourcesState extends State<Knit2Resources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'knit4-1',
         ),
       ),
     );

@@ -22,7 +22,7 @@ class _NwvnResourcesState extends State<NwvnResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'nwvn4-2',
         ),
       ),
     );

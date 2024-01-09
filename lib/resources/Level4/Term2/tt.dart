@@ -22,7 +22,7 @@ class _TTResourcesState extends State<TTResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'tt4-2',
         ),
       ),
     );

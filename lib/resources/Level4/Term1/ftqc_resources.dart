@@ -22,7 +22,7 @@ class _FTQCResourcesState extends State<FTQCResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'ftqc4-1',
         ),
       ),
     );

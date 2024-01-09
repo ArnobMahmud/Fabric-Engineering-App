@@ -22,7 +22,7 @@ class _TAMResourcesState extends State<TAMResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'tam4-1',
         ),
       ),
     );

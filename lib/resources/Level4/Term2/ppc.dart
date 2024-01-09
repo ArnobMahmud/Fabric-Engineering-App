@@ -22,7 +22,7 @@ class _PPCResourcesState extends State<PPCResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: '',
+          endpoint: 'ppc4-2',
         ),
       ),
     );
