@@ -23,7 +23,7 @@ class Category extends StatelessWidget {
         Navigator.pushNamed(context, nav!);
       },
       child: Container(
-        padding:const EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         margin: const EdgeInsets.only(top: 5),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -53,34 +53,29 @@ class Category extends StatelessWidget {
                 height: 90,
                 width: 100,
               ),
-              const Spacer(
-                flex: 1,
+              const SizedBox(
+                height: 50,
               ),
               Text(
                 title!,
                 style: GoogleFonts.roboto(
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff393646),
                 ),
                 textAlign: TextAlign.center,
-                maxLines: 2,
               ),
               const SizedBox(
                 height: 10,
               ),
-              Expanded(
-                flex: 1,
-                child: Text(
-                  subTitle!,
-                  style: GoogleFonts.roboto(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                    color: const Color(0xff404258),
-                  ),
-                  maxLines: 2,
-                  textAlign: TextAlign.center,
+              Text(
+                subTitle!,
+                style: GoogleFonts.roboto(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: const Color(0xff404258),
                 ),
+                textAlign: TextAlign.center,
               ),
             ],
           ),

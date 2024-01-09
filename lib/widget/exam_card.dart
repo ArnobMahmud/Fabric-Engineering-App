@@ -21,8 +21,6 @@ class ExamCard extends StatelessWidget {
         Navigator.pushNamed(context, nav!);
       },
       child: Container(
-        height: 100,
-        width: 200,
         margin: const EdgeInsets.only(top: 5),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -45,7 +43,7 @@ class ExamCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 20,
+                height: 30,
               ),
               SvgPicture.asset(
                 imgData!,
@@ -62,6 +60,7 @@ class ExamCard extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff393646),
                 ),
+                textAlign: TextAlign.center,
                 maxLines: 2,
               ),
               const Spacer(

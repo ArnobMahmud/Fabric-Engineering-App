@@ -33,28 +33,22 @@ class ExamPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        children: [ 
-          Expanded(
-            child: GridView.builder(
-              padding: const EdgeInsets.all(15),
-              itemCount: examData.length,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisSpacing: 20,
-                mainAxisSpacing: 20,
-                crossAxisCount: 2,
-                childAspectRatio: aspectRatio / .85,
-              ),
-              itemBuilder: (BuildContext context, int index) {
-                return ExamCard(
-                  title: examData[index].title,
-                  imgData: examData[index].imgData,
-                  nav: examData[index].nav,
-                );
-              },
-            ),
-          ),
-        ],
+      body: GridView.builder(
+        padding: const EdgeInsets.all(15),
+        itemCount: examData.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
+          crossAxisCount: 2,
+          childAspectRatio: aspectRatio / .85,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return ExamCard(
+            title: examData[index].title,
+            imgData: examData[index].imgData,
+            nav: examData[index].nav,
+          );
+        },
       ),
     );
   }

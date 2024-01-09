@@ -14,12 +14,13 @@ class YearSegment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return GestureDetector(
       onTap: () {
         Navigator.pushNamed(context, nav!);
       },
       child: Container(
-        height: 130,
+        height: height * .20,
         width: width,
         margin: const EdgeInsets.fromLTRB(0, 10, 20, 10),
         decoration: const BoxDecoration(
@@ -29,9 +30,9 @@ class YearSegment extends StatelessWidget {
           color: Color(0xffe8d3b5),
           boxShadow: [
             BoxShadow(
-              color: Color.fromARGB(245, 176, 154, 197),
-              spreadRadius: 2,
-              blurRadius: 3,
+              color: Color.fromARGB(245, 125, 122, 128),
+              spreadRadius: 1,
+              blurRadius: 7,
               offset: Offset(1, 2), // changes position of shadow
             ),
           ],
@@ -42,7 +43,7 @@ class YearSegment extends StatelessWidget {
               top: 0,
               left: 0,
               child: Container(
-                height: 150,
+                height: height * .20,
                 width: 150,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(

@@ -6,6 +6,7 @@ import 'pages/level1_page.dart';
 import 'pages/level2_page.dart';
 import 'pages/level3_page.dart';
 import 'pages/level4_page.dart';
+import 'pages/notice_page.dart';
 import 'pages/resources_page.dart';
 import 'provider/level1_term1_page.dart';
 import 'provider/level1_term2_page.dart';
@@ -58,6 +59,7 @@ import 'resources/Level4/Term2/es.dart';
 import 'resources/Level4/Term2/nwvn_resources.dart';
 import 'resources/Level4/Term2/ppc.dart';
 import 'resources/Level4/Term2/tt.dart';
+import 'screen/splash.dart';
 
 void main() => runApp(const MyApp());
 
@@ -74,8 +76,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fabric Engineering Application',
       initialRoute: '/',
+      //home:const SplashScreen(),
       routes: {
-        '/': (context) => const HomePage(),
+        '/': (context) => const SplashScreen(),
+        '/home': (context) => const HomePage(),
         '/res': (context) => const ResourcePage(),
         '/rot': (context) => const ExamPage(),
         '/lab': (context) => const LabPage(),
@@ -133,7 +137,8 @@ class MyApp extends StatelessWidget {
         '/ppc': (context) => const PPCResources(),
         '/nwvn': (context) => const NwvnResources(),
         '/tt': (context) => const TTResources(),
-        '/es': (context) => const ESResources()
+        '/es': (context) => const ESResources(),
+        '/not': (context) => NoticePage(),
       },
     );
   }

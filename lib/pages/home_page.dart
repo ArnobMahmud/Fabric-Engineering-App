@@ -1,7 +1,6 @@
 import 'package:fabric_engineering_app/db/category_data.dart';
 import 'package:fabric_engineering_app/widget/category.dart';
 import 'package:flutter/material.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,7 +20,7 @@ class HomePage extends StatelessWidget {
         title: Text(
           "Fabric Engineering",
           style: GoogleFonts.roboto(
-            fontSize: 30,
+            fontSize: 26,
             fontWeight: FontWeight.w400,
             color: const Color.fromARGB(159, 87, 68, 94),
           ),
@@ -101,21 +100,21 @@ class HomePage extends StatelessWidget {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(14),
-                    height: 200,
                     width: width * .55,
-                    //color: Colors.red,
-                    child: const Center(
-                      child: AutoSizeText(
-                        '''Fabric Engineering is one of the basic textile engineering branches with its large application in weaving, knitting and non-woven.''',
-                        maxLines: 10,
-                        minFontSize: 14,
-                        maxFontSize: 19,
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                          color: Color.fromARGB(217, 44, 43, 45),
+                    // color: Colors.red,
+                    child: const Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            '''Fabric Engineering is one of the basic textile engineering branches with its large application in weaving, knitting and non-woven.''',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color.fromARGB(217, 44, 43, 45),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
                   ),
                   SizedBox(
