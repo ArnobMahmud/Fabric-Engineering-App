@@ -16,6 +16,7 @@ class ResourcePage extends StatelessWidget {
           icon: const Icon(
             Icons.arrow_back_ios,
             color: Color.fromARGB(255, 41, 51, 104),
+            size: 20,
           ),
           onPressed: () {
             Navigator.pop(context);
@@ -25,7 +26,7 @@ class ResourcePage extends StatelessWidget {
           'Resources',
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 22,
+              fontSize: 18,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),

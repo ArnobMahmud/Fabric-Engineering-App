@@ -24,6 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: const Color(0xffece4dc),
       body: Center(
         child: Column(
+          crossAxisAlignment : CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Spacer(),
@@ -40,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 letterSpacing: .7,
                 textStyle: const TextStyle(
                   color: Color(0xff76424e),
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -53,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 style: GoogleFonts.ubuntu(
                   textStyle: const TextStyle(
                     color: Color(0xff8c8798),
-                    fontSize: 22,
+                    fontSize: 16,
                     letterSpacing: 0.4,
                     fontWeight: FontWeight.w500,
                   ),

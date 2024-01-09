@@ -11,13 +11,14 @@ class DrawerTile extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon!,
-        color: const Color.fromARGB(255, 14, 53, 86),
+        color: Theme.of(context).colorScheme.tertiary,
         size: 30,
       ),
       title: Text(
         title!,
-        style: const TextStyle(
-          fontSize: 20,
+        style: TextStyle(
+          fontSize: 18,
+          color: Theme.of(context).colorScheme.inversePrimary
         ),
       ),
       onTap: ontap,

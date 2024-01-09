@@ -40,6 +40,7 @@ class ExamCard extends StatelessWidget {
         ),
         child: Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
@@ -56,7 +57,7 @@ class ExamCard extends StatelessWidget {
               Text(
                 title!,
                 style: GoogleFonts.roboto(
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff393646),
                 ),

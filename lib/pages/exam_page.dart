@@ -26,7 +26,7 @@ class ExamPage extends StatelessWidget {
           'Exams',
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 24,
+              fontSize: 20,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),

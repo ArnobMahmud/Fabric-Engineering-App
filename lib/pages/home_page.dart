@@ -1,4 +1,6 @@
 import 'package:fabric_engineering_app/db/category_data.dart';
+import 'package:fabric_engineering_app/pages/developer_page.dart';
+import 'package:fabric_engineering_app/pages/settings.dart';
 import 'package:fabric_engineering_app/widget/category.dart';
 import 'package:fabric_engineering_app/widget/drawer_tile.dart';
 import 'package:flutter/material.dart';
@@ -18,27 +20,29 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 255, 249, 213),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 249, 213),
+        //backgroundColor: Colors.transparent,
         centerTitle: true,
         title: Text(
           "Fabric Engineering",
           style: GoogleFonts.roboto(
-            fontSize: 26,
+            fontSize: 20,
             fontWeight: FontWeight.w400,
-            color: const Color.fromARGB(159, 87, 68, 94),
+            letterSpacing: 2,
+            color: Theme.of(context).colorScheme.inversePrimary,
           ),
         ),
       ),
       drawer: Drawer(
-        
-        backgroundColor: Colors.deepPurple[100],
+        backgroundColor: Theme.of(context).colorScheme.background,
         child: ListView(
           children: [
-            const DrawerHeader(
+            DrawerHeader(
               child: Text(
                 'F A B R I C\nE N G I N E E R I N G\nR E S O U R C E S',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 18,
+                  color: Theme.of(context).colorScheme.inversePrimary,
                 ),
               ),
             ),
@@ -48,7 +52,9 @@ class HomePage extends StatelessWidget {
               ontap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const HomePage()),
+                  MaterialPageRoute(
+                    builder: (context) => const Settings(),
+                  ),
                 );
               },
             ),
@@ -58,7 +64,9 @@ class HomePage extends StatelessWidget {
               ontap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const HomePage()),
+                  MaterialPageRoute(
+                    builder: (context) => const DeveloperPage(),
+                  ),
                 );
               },
             ),

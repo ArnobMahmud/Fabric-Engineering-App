@@ -73,7 +73,7 @@ class _LectureSegmentState extends State<LectureSegment> {
                         child: Text(
                           widget.value!.discussedTopics!,
                           style: GoogleFonts.roboto(
-                            fontSize: 20,
+                            fontSize: 18,
                             fontWeight: FontWeight.w500,
                             color: const Color.fromARGB(159, 87, 68, 94),
                           ),
@@ -89,7 +89,7 @@ class _LectureSegmentState extends State<LectureSegment> {
                   Text(
                     widget.value!.date!,
                     style: GoogleFonts.roboto(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.w400,
                       color: const Color.fromARGB(159, 87, 68, 94),
                     ),
@@ -103,7 +103,7 @@ class _LectureSegmentState extends State<LectureSegment> {
                         child: Text(
                           widget.value!.lecturer!,
                           style: GoogleFonts.roboto(
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w400,
                             color: const Color.fromARGB(159, 87, 68, 94),
                           ),

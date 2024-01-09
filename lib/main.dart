@@ -1,4 +1,6 @@
+import 'package:fabric_engineering_app/config/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'pages/exam_page.dart';
 import 'pages/home_page.dart';
 import 'pages/lab_page.dart';
@@ -61,7 +63,18 @@ import 'resources/Level4/Term2/ppc.dart';
 import 'resources/Level4/Term2/tt.dart';
 import 'screen/splash.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => ThemeProvider(),
+        ),
+      ],
+      child: const MyApp(),
+    ),
+  );
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -70,9 +83,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        applyElevationOverlayColor: false,
-      ),
+      theme: Provider.of<ThemeProvider>(context).themeData,
       debugShowCheckedModeBanner: false,
       title: 'Fabric Engineering Application',
       initialRoute: '/',

@@ -19,97 +19,101 @@ class YearSegment extends StatelessWidget {
       onTap: () {
         Navigator.pushNamed(context, nav!);
       },
-      child: Container(
-        height: height * .20,
-        width: width,
-        margin: const EdgeInsets.fromLTRB(0, 10, 20, 10),
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.only(
-            topRight: Radius.circular(20),
+      child: Padding(
+        padding: const EdgeInsets.all(14.0),
+        child: Container(
+          height: height * .20,
+          width: width,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(20),
+              bottomLeft: Radius.circular(20),
+            ),
+            color: Color(0xffe8d3b5),
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromARGB(245, 125, 122, 128),
+                spreadRadius: 1,
+                blurRadius: 7,
+                offset: Offset(1, 2), // changes position of shadow
+              ),
+            ],
           ),
-          color: Color(0xffe8d3b5),
-          boxShadow: [
-            BoxShadow(
-              color: Color.fromARGB(245, 125, 122, 128),
-              spreadRadius: 1,
-              blurRadius: 7,
-              offset: Offset(1, 2), // changes position of shadow
-            ),
-          ],
-        ),
-        child: Stack(
-          children: [
-            Positioned(
-              top: 0,
-              left: 0,
-              child: Container(
-                height: height * .20,
-                width: 150,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(60),
-                  ),
-                  color: Color(0xffB0A4A4),
-                ),
-              ),
-            ),
-            Positioned(
-              top: 0,
-              right: 0,
-              child: Container(
-                height: 50,
-                width: 50,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(20),
-                    bottomLeft: Radius.circular(20),
-                  ),
-                  color: Color.fromARGB(255, 153, 139, 137),
-                ),
-                child: const Center(
-                  child: Icon(
-                    Icons.ac_unit_rounded,
-                    size: 30,
-                    color: Color.fromARGB(255, 39, 60, 81),
+          child: Stack(
+            children: [
+              Positioned(
+                top: 0,
+                left: 0,
+                child: Container(
+                  height: height * .20,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(60),
+                      bottomLeft: Radius.circular(20),
+                    ),
+                    color: Color(0xffB0A4A4),
                   ),
                 ),
               ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(
-                  width: 10,
+              Positioned(
+                top: 0,
+                right: 0,
+                child: Container(
+                  height: 50,
+                  width: 50,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      bottomLeft: Radius.circular(20),
+                    ),
+                    color: Color.fromARGB(255, 153, 139, 137),
+                  ),
+                  child: const Center(
+                    child: Icon(
+                      Icons.ac_unit_rounded,
+                      size: 30,
+                      color: Color.fromARGB(255, 39, 60, 81),
+                    ),
+                  ),
                 ),
-                SvgPicture.asset(
-                  'images/chart.svg',
-                  height: 80,
-                  width: 80,
-                ),
-                const Spacer(
-                  flex: 1,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Center(
-                    child: Text(
-                      name!,
-                      style: GoogleFonts.zillaSlab(
-                        textStyle: const TextStyle(
-                          fontSize: 30,
-                          color: Color.fromARGB(255, 41, 51, 104),
-                          fontWeight: FontWeight.w400,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  SvgPicture.asset(
+                    'images/chart.svg',
+                    height: 80,
+                    width: 80,
+                  ),
+                  const Spacer(
+                    flex: 1,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Center(
+                      child: Text(
+                        name!,
+                        style: GoogleFonts.roboto(
+                          textStyle: const TextStyle(
+                            fontSize: 22,
+                            color: Color.fromARGB(255, 41, 51, 104),
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-                const Spacer(
-                  flex: 3,
-                ),
-              ],
-            ),
-          ],
+                  const Spacer(
+                    flex: 3,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

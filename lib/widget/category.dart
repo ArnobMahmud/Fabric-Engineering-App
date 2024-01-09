@@ -59,7 +59,7 @@ class Category extends StatelessWidget {
               Text(
                 title!,
                 style: GoogleFonts.roboto(
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff393646),
                 ),
