@@ -54,7 +54,7 @@ class Category extends StatelessWidget {
                 width: 100,
               ),
               const SizedBox(
-                height: 50,
+                height: 30,
               ),
               Text(
                 title!,

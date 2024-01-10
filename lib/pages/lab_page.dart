@@ -39,12 +39,12 @@ class LabPage extends StatelessWidget {
         itemCount: labData.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
+          mainAxisSpacing: 10,
           crossAxisCount: 2,
-          childAspectRatio: aspectRatio / .85,
+          childAspectRatio: aspectRatio / .9,
         ),
         itemBuilder: (BuildContext context, int index) {
-          return ExamCard(
+          return ArchiveCard(
             title: labData[index].title,
             imgData: labData[index].imgData,
             nav: labData[index].nav,

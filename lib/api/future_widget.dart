@@ -19,7 +19,8 @@ class FutureWidget extends StatelessWidget {
             child: CircularProgressIndicator(),
           );
         } else if (snapshot.data?.isEmpty == true) {
-          return const NoClass();
+          return const HandleUpdate(
+              message: 'No Online Classes!', img: 'images/server.svg');
         } else if (snapshot.hasData) {
           final res = snapshot.data!;
           return Scrollbar(

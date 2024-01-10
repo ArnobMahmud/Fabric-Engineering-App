@@ -165,7 +165,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(14),
-                    width: width * .55,
+                    width: width * .60,
                     // color: Colors.red,
                     child: const Row(
                       children: [
@@ -185,7 +185,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     //color: Colors.blue,
                     height: 220,
-                    width: width * .45,
+                    width: width * .40,
                     child: SvgPicture.asset('images/snow.svg'),
                   ),
                 ],
@@ -214,7 +214,7 @@ class HomePage extends StatelessWidget {
                     crossAxisSpacing: 15,
                     mainAxisSpacing: 10,
                     crossAxisCount: 2,
-                    childAspectRatio: aspectRatio * 1.1,
+                    childAspectRatio: aspectRatio /.9,
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     return Category(

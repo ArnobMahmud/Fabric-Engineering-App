@@ -39,7 +39,7 @@ class Level3Page extends StatelessWidget {
             },
             semester: 'Term 1',
             course:
-                'Courses :\n~ Yarn Manufacturing(YM) II,\n~ Wet Processing(WP) II,\n~ Economics,\n~ Apparel Manufacturing(AM) II,\n~ Knitting(Knit) I,\n~ Industrial Management (IM).',
+                'Courses :\n~ Yarn Manufacturing(YM) II\n~ Wet Processing(WP) II\n~ Economics\n~ Apparel Manufacturing(AM) II\n~ Knitting(Knit) I\n~ Industrial Management (IM).',
           ),
           SemesterSegment(
             onTap: () {
@@ -47,7 +47,7 @@ class Level3Page extends StatelessWidget {
             },
             semester: 'Term 2',
             course:
-                'Courses :\n~ Application of Computer in Fabric Manufacturing (ACFM),\n~ Fabric Structure & Design (FSD),\n~ Weaving(Wvg) II,\n~ Automation & Control Engineering (ACE),\n~ Accounting & Cost Management (ACM).',
+                'Courses :\n~ Application of Computer in Fabric Manufacturing (ACFM)\n~ Fabric Structure & Design (FSD)\n~ Weaving(Wvg) II\n~ Automation & Control Engineering (ACE)\n~ Accounting & Cost Management (ACM).',
           ),
         ],
       ),

@@ -9,7 +9,7 @@ final List<Category> categoryData = [
   ),
   Category(
     title: 'Exam Routine',
-    subTitle: 'Exam routine of fabric engineering department.',
+    subTitle: 'Exam routine of fabric department.',
     nav: '/rot',
     imgData: 'images/sem.svg',
   ),

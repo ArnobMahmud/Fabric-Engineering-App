@@ -38,12 +38,12 @@ class ExamPage extends StatelessWidget {
         itemCount: examData.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
+          mainAxisSpacing: 10,
           crossAxisCount: 2,
-          childAspectRatio: aspectRatio / .85,
+          childAspectRatio: aspectRatio / .9,
         ),
         itemBuilder: (BuildContext context, int index) {
-          return ExamCard(
+          return ArchiveCard(
             title: examData[index].title,
             imgData: examData[index].imgData,
             nav: examData[index].nav,

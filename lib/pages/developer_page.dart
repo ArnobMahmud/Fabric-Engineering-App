@@ -35,7 +35,11 @@ class DeveloperPage extends StatelessWidget {
           Center(
             child: Column(
               children: [
-               Image.asset('images/logo.png',height: 150, width: 150,),
+                Image.asset(
+                  'images/logo.png',
+                  height: 150,
+                  width: 150,
+                ),
                 const SizedBox(
                   height: 10,
                 ),
@@ -79,12 +83,10 @@ class DeveloperPage extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 20,
+              vertical: 10,
             ),
             child: Container(
               padding: const EdgeInsets.all(15.0),
@@ -100,7 +102,7 @@ class DeveloperPage extends StatelessWidget {
                 \n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.''',
                 style: GoogleFonts.roboto(
                   textStyle: const TextStyle(
-                    fontSize: 18,
+                    fontSize: 16,
                     color: Color.fromARGB(255, 41, 51, 104),
                     fontWeight: FontWeight.w400,
                   ),

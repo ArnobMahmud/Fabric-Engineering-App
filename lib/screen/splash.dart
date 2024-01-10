@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     Future.delayed(
       const Duration(
-        seconds: 30,
+        seconds: 3,
       ),
       () {
         Navigator.pushReplacementNamed(context, '/home');
