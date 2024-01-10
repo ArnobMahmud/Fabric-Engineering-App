@@ -14,41 +14,40 @@ class Level2Page extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            size: 25,
+          ),
         ),
         backgroundColor: const Color(0xffe0e0e0),
         title: Text(
           "Level 2",
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 30,
+              fontSize: 22,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l2t1');
-              },
-              semester: 'Term 1',
-              course:
-                  'Courses : Statistics, Fiber & Yarn Testing (FYT), Man-made Textile Fibers (MMTF), Yarn Manufacturing(YM) I, Weaving Preparatory Process (WvgPP), Fundamentals of Mechanical Engineering (FME).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l2t1');
+            },
+            semester: 'Term 1',
+            course:
+                'Courses :\n~ Statistics\n~ Fiber & Yarn Testing (FYT)\n~ Man-made Textile Fibers (MMTF)\n~ Yarn Manufacturing(YM) I\n~ Weaving Preparatory Process (WvgPP)\n~ Fundamentals of Mechanical Engineering (FME).',
           ),
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l2t2');
-              },
-              semester: 'Term 2',
-              course:
-                  'Courses : Textile Physics (TP), Weaving(Wvg) I, Wet Processing(WP) I, Fundamentals of Marketing (FMkt), Apparel Manufacturing(AM) I, Fundamentals of Electrical & Electronics Engineering (FEEE).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l2t2');
+            },
+            semester: 'Term 2',
+            course:
+                'Courses :\n~ Textile Physics (TP)\n~ Weaving(Wvg) I\n~ Wet Processing(WP) I\n~ Fundamentals of Marketing (FMkt)\n~ Apparel Manufacturing(AM) I\n~ Fundamentals of Electrical & Electronics Engineering (FEEE).',
           ),
         ],
       ),

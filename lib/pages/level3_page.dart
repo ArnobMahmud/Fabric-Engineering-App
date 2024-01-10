@@ -14,41 +14,40 @@ class Level3Page extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            size: 25,
+          ),
         ),
         backgroundColor: const Color(0xffe0e0e0),
         title: Text(
           "Level 3",
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 30,
+              fontSize: 22,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l3t1');
-              },
-              semester: 'Term 1',
-              course:
-                  'Courses : Yarn Manufacturing(YM) II, Wet Processing(WP) II, Economics, Apparel Manufacturing(AM) II, Knitting(Knit) I, Industrial Management (IM).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l3t1');
+            },
+            semester: 'Term 1',
+            course:
+                'Courses :\n~ Yarn Manufacturing(YM) II,\n~ Wet Processing(WP) II,\n~ Economics,\n~ Apparel Manufacturing(AM) II,\n~ Knitting(Knit) I,\n~ Industrial Management (IM).',
           ),
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l3t2');
-              },
-              semester: 'Term 2',
-              course:
-                  'Courses : Application of Computer in Fabric Manufacturing (ACFM), Fabric Structure & Design (FSD), Weaving(Wvg) II, Automation & Control Engineering (ACE), Accounting & Cost Management (ACM).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l3t2');
+            },
+            semester: 'Term 2',
+            course:
+                'Courses :\n~ Application of Computer in Fabric Manufacturing (ACFM),\n~ Fabric Structure & Design (FSD),\n~ Weaving(Wvg) II,\n~ Automation & Control Engineering (ACE),\n~ Accounting & Cost Management (ACM).',
           ),
         ],
       ),

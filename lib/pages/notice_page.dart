@@ -11,6 +11,9 @@ class NoticePage extends StatelessWidget {
       NavigationDelegate(
         onProgress: (int progress) {
           debugPrint("Loading: $progress%");
+          const Center(
+            child: CircularProgressIndicator(),
+          );
         },
         onPageStarted: (String url) {},
         onPageFinished: (String url) {},

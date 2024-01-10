@@ -32,7 +32,7 @@ class YearSegment extends StatelessWidget {
             color: Color(0xffe8d3b5),
             boxShadow: [
               BoxShadow(
-                color: Color.fromARGB(245, 125, 122, 128),
+                color: Color.fromARGB(245, 194, 192, 197),
                 spreadRadius: 1,
                 blurRadius: 7,
                 offset: Offset(1, 2), // changes position of shadow

@@ -11,16 +11,20 @@ Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME)
 
 <table>
   <tr>
+    <th>Splash Screen</th>
     <th>Home Screen</th>
     <th>Level Screen</th>
     <th>Semester Screen</th>
   </tr>
-  <tr>
+  <tr>  
     <td>
-      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/4050dd93-cea6-4638-9920-14f2b2c11acd">
+      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/c4437a27-aa95-4ccf-aba1-3d043cfdaeb7">
+    </td> 
+    <td>
+      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/6b49dc22-ce07-49ae-8eb6-c66c63195615">
     </td>
     <td>
-      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/9ba44d1a-d959-4153-bebe-7e7c0ed5d040">
+      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/3f71b2a7-4dc6-4721-aafa-5ee76acd6464">
     </td> 
     <td>
       <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/a504a631-9ad1-4485-81c8-eb97a81cb1c7">
@@ -45,6 +49,7 @@ Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME)
   <tr>
     <th>Exam Screen</th>
     <th>Lab Screen</th>
+    <th>Developer Screen</th>
   </tr>
   <tr>  
     <td>
@@ -52,6 +57,9 @@ Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME)
     </td>
     <td>
       <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/5e6d1cae-4b93-43a1-935d-f6a57e5dc279">
+    </td>
+    <td>
+      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/488a3ab7-3b6f-4c66-80b0-844c8b0c4920">
     </td>
   </tr>
 </table>

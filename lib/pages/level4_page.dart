@@ -14,41 +14,40 @@ class Level4Page extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            size: 25,
+          ),
         ),
         backgroundColor: const Color(0xffe0e0e0),
         title: Text(
           "Level 4",
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 30,
+              fontSize: 22,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l4t1');
-              },
-              semester: 'Term 1',
-              course:
-                  'Courses : Sociology, Fabric Testing & Quality Control (FTQC), Knitting(Knit) II, Special Fabric Production (SFP), Textile & Apparel Merchandizing (TAM).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l4t1');
+            },
+            semester: 'Term 1',
+            course:
+                'Courses :\n~ Sociology\n~ Fabric Testing & Quality Control (FTQC)\n~ Knitting(Knit) II\n~ Special Fabric Production (SFP)\n~ Textile & Apparel Merchandizing (TAM).',
           ),
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l4t2');
-              },
-              semester: 'Term 2',
-              course:
-                  'Courses : Nonwoven (NWvn), Technical Textile (TT), Environmental Studies (ES), Production Planning & Control (PPC).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l4t2');
+            },
+            semester: 'Term 2',
+            course:
+                'Courses :\n~ Nonwoven (NWvn)\n~ Technical Textile (TT)\n~ Environmental Studies (ES)\n~ Production Planning & Control (PPC).',
           ),
         ],
       ),

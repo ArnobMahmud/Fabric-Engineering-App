@@ -1,6 +1,5 @@
-import 'package:fabric_engineering_app/config/theme_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/services.dart';
 import 'pages/exam_page.dart';
 import 'pages/home_page.dart';
 import 'pages/lab_page.dart';
@@ -65,14 +64,14 @@ import 'screen/splash.dart';
 
 void main() {
   runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (context) => ThemeProvider(),
-        ),
-      ],
-      child: const MyApp(),
-    ),
+    // MultiProvider(
+    //   providers: [
+    //     ChangeNotifierProvider(
+    //       create: (context) => ThemeProvider(),
+    //     ),
+    //   ],
+    // ),
+    const MyApp(),
   );
 }
 
@@ -82,12 +81,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
+     SystemChrome.setPreferredOrientations(
+      [
+        DeviceOrientation.portraitUp,
+      ],
+    );
     return MaterialApp(
-      theme: Provider.of<ThemeProvider>(context).themeData,
+      //theme: Provider.of<ThemeProvider>(context).themeData,
       debugShowCheckedModeBanner: false,
       title: 'Fabric Engineering Application',
       initialRoute: '/',
-      //home:const SplashScreen(),
       routes: {
         '/': (context) => const SplashScreen(),
         '/home': (context) => const HomePage(),

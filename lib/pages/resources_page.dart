@@ -26,7 +26,7 @@ class ResourcePage extends StatelessWidget {
           'Resources',
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 18,
+              fontSize: 20,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),

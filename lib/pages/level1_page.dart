@@ -14,41 +14,40 @@ class Level1Page extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            size: 25,
+          ),
         ),
         backgroundColor: const Color(0xffe0e0e0),
         title: Text(
           "Level 1",
           style: GoogleFonts.roboto(
             textStyle: const TextStyle(
-              fontSize: 30,
+              fontSize: 22,
               color: Color.fromARGB(255, 41, 51, 104),
               fontWeight: FontWeight.w400,
             ),
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Expanded(
-            child: SemesterSegment(
-              onTap: () {
-                Navigator.pushNamed(context, '/l1t1');
-              },
-              semester: 'Term 1',
-              course:
-                  'Courses : Physics I, Chemistry I, Mathematics I, Business & Communicative English (BCE), Natural Textile Fiber (NTF).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l1t1');
+            },
+            semester: 'Term 1',
+            course:
+                'Courses :\n~ Physics I\n~ Chemistry I\n~ Mathematics I\n~ Business & Communicative English (BCE)\n~ Natural Textile Fiber (NTF).',
           ),
-          Expanded(
-            child: SemesterSegment(
-               onTap: () {
-                Navigator.pushNamed(context, '/l1t2');
-              },
-              semester: 'Term 2',
-              course:
-                  'Courses : Physics II, Chemistry II, Mathematics II, Engineering Materials (EM), Polymer Science & Engineering (PSE), Computer Programming (CP).',
-            ),
+          SemesterSegment(
+            onTap: () {
+              Navigator.pushNamed(context, '/l1t2');
+            },
+            semester: 'Term 2',
+            course:
+                'Courses :\n~ Physics II\n~ Chemistry II\n~ Mathematics II\n~ Engineering Materials (EM)\n~ Polymer Science & Engineering (PSE)\n~ Computer Programming (CP).',
           ),
         ],
       ),

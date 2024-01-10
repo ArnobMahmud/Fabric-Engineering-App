@@ -22,12 +22,19 @@ class FutureWidget extends StatelessWidget {
           return const NoClass();
         } else if (snapshot.hasData) {
           final res = snapshot.data!;
-          return ListView.builder(
-            itemCount: res.length,
-            itemBuilder: (context, index) {
-              final val = res[index];
-              return LectureSegment(value: val);
-            },
+          return Scrollbar(
+            thickness: 5,
+            scrollbarOrientation: ScrollbarOrientation.right,
+            thumbVisibility: true,
+            radius: const Radius.circular(5),
+            interactive: true,
+            child: ListView.builder(
+              itemCount: res.length,
+              itemBuilder: (context, index) {
+                final val = res[index];
+                return LectureSegment(value: val);
+              },
+            ),
           );
         } else {
           return const ErrorPage();
