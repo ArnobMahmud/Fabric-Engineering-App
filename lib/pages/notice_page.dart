@@ -1,10 +1,5 @@
-import 'dart:async';
-import 'package:connectivity/connectivity.dart';
+import 'package:fabric_engineering_app/api/web_view.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-
-import '../screen/error_screen.dart';
 
 class NoticePage extends StatefulWidget {
   const NoticePage({super.key});
@@ -14,36 +9,18 @@ class NoticePage extends StatefulWidget {
 }
 
 class _NoticePageState extends State<NoticePage> {
-  bool isConnected = false;
-  late StreamSubscription sub;
-
-  @override
-  void initState() {
-    super.initState();
-    sub = Connectivity().onConnectivityChanged.listen(
-      (event) {
-        setState(
-          () {
-            isConnected = (event != ConnectivityResult.none);
-          },
-        );
-      },
-    );
-  }
-
-  @override
-  void dispose() {
-    sub.cancel();
-    super.dispose();
-  }
-
-  final _controller = WebViewController()
-    ..setJavaScriptMode(JavaScriptMode.disabled)
-    ..loadRequest(Uri.parse("https://www.butex.edu.bd/news-archive/"));
-
   @override
   Widget build(BuildContext context) {
-    return isConnected
+    return const OpenWebView(
+      title: 'Butex Notices',
+      url: 'https://www.butex.edu.bd/news-archive/',
+    );
+  }
+}
+
+
+/*
+   return isConnected
         ? Scaffold(
             backgroundColor: const Color(0xffe2dfd2),
             appBar: AppBar(
@@ -76,5 +53,4 @@ class _NoticePageState extends State<NoticePage> {
             ),
           )
         : const ErrorScreen();
-  }
-}
+*/

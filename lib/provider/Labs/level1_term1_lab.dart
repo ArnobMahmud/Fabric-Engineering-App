@@ -8,7 +8,9 @@ class Level1Term1Lab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffe2dfd2),
       appBar: AppBar(
+        backgroundColor: const Color(0xffe2dfd2),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

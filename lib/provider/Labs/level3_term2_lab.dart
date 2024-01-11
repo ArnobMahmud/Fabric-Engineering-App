@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../widget/no_class.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../../widget/lab_schedule_card.dart';
 
 class Level3Term2Lab extends StatelessWidget {
   const Level3Term2Lab({super.key});
@@ -7,7 +8,9 @@ class Level3Term2Lab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffe2dfd2),
       appBar: AppBar(
+        backgroundColor: const Color(0xffe2dfd2),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -18,170 +21,54 @@ class Level3Term2Lab extends StatelessWidget {
             color: Color.fromARGB(255, 41, 51, 104),
           ),
         ),
+        title: Text(
+          'Level 3 - Term 2 Lab',
+          style: GoogleFonts.roboto(
+            textStyle: const TextStyle(
+              fontSize: 20,
+              color: Color.fromARGB(255, 41, 51, 104),
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+        ),
       ),
-      body: const HandleUpdate(
-        message: 'Not added yet!',
-        img: 'images/sun.svg',
+      body: ListView(
+        children: const [
+          LabScheduleCard(
+            group: 'Group A',
+            day1: 'Wednesday',
+            day2: 'Thursday',
+            time1: '10:40AM - 12:20PM',
+            time2: '2:00PM - 3:40PM',
+            time3: '9:50AM - 11:30AM',
+            slot1: 'Application of Computer in Fabric Manufacturing (ACFM)',
+            slot2: 'Fabric Structure & Design (FSD)',
+            slot3: 'Weaving(Wvg) II',
+          ),
+          LabScheduleCard(
+            group: 'Group B',
+            day1: 'Sunday',
+            day2: 'Thursday',
+            time1: '10:40AM - 12:20PM',
+            time2: '3:40PM - 5:20PM',
+            time3: '9:50AM - 11:30AM',
+            slot1: 'Weaving(Wvg) II',
+            slot2: 'Fabric Structure & Design (FSD)',
+            slot3: 'Application of Computer in Fabric Manufacturing (ACFM)',
+          ),
+          LabScheduleCard(
+            group: 'Group C',
+            day1: 'Monday',
+            day2: 'Wednesday',
+            time1: '11:30AM - 1:10PM',
+            time2: '2:00PM - 3:40PM',
+            time3: '10:40AM - 12:20PM',
+            slot1: 'Application of Computer in Fabric Manufacturing (ACFM)',
+            slot2: 'Fabric Structure & Design (FSD)',
+            slot3: 'Weaving(Wvg) II',
+          ),
+        ],
       ),
     );
   }
 }
-
-
-
-  // body: ListView(
-  //       children: [
-  //         Padding(
-  //           padding: const EdgeInsets.all(16.0),
-  //           child: Container(
-  //             padding: const EdgeInsets.all(16.0),
-  //             decoration: BoxDecoration(
-  //               color: const Color(0xffcfbaba),
-  //               borderRadius: BorderRadius.circular(15),
-  //             ),
-  //             child: Column(
-  //               children: [
-  //                 Text(
-  //                   'Group - A',
-  //                   style: GoogleFonts.roboto(
-  //                     textStyle: const TextStyle(
-  //                       fontSize: 24,
-  //                       color: Color.fromARGB(255, 41, 51, 104),
-  //                       fontWeight: FontWeight.w400,
-  //                     ),
-  //                   ),
-  //                 ),
-  //                 const SizedBox(
-  //                   height: 20,
-  //                 ),
-  //                 Column(
-  //                   mainAxisAlignment: MainAxisAlignment.start,
-  //                   crossAxisAlignment: CrossAxisAlignment.start,
-  //                   children: [
-  //                     SingleChildScrollView(
-  //                       scrollDirection: Axis.horizontal,
-  //                       child: Container(
-  //                         decoration: BoxDecoration(
-  //                           color: Color.fromARGB(255, 105, 64, 64),
-  //                           borderRadius: BorderRadius.circular(5),
-  //                         ),
-  //                         //color: Colors.red,
-  //                         padding: const EdgeInsets.all(16.0),
-  //                         child: Container(
-  //                           padding: const EdgeInsets.all(16.0),
-  //                           color: Color.fromARGB(255, 58, 73, 86),
-  //                           child: Column(
-  //                             children: [
-  //                               Text(
-  //                                 'Wednesday',
-  //                                 style: GoogleFonts.roboto(
-  //                                   textStyle: const TextStyle(
-  //                                     fontSize: 18,
-  //                                     color: Color.fromARGB(255, 194, 202, 241),
-  //                                     fontWeight: FontWeight.w400,
-  //                                   ),
-  //                                 ),
-  //                               ),
-  //                               const SizedBox(
-  //                                 height: 10,
-  //                               ),
-  //                               Column(
-  //                                 crossAxisAlignment: CrossAxisAlignment.center,
-  //                                 children: [
-  //                                   Container(
-  //                                     padding: const EdgeInsets.all(16.0),
-  //                                     decoration: BoxDecoration(
-  //                                       color: const Color.fromARGB(
-  //                                           255, 133, 119, 119),
-  //                                       borderRadius: BorderRadius.circular(5),
-  //                                     ),
-  //                                     child: Column(
-  //                                       children: [
-  //                                         Text(
-  //                                           '10:40AM - 12:20PM',
-  //                                           style: GoogleFonts.roboto(
-  //                                             textStyle: const TextStyle(
-  //                                               fontSize: 18,
-  //                                               color: Color.fromARGB(
-  //                                                   255, 194, 202, 241),
-  //                                               fontWeight: FontWeight.w400,
-  //                                             ),
-  //                                           ),
-  //                                         ),
-  //                                         const SizedBox(
-  //                                           height: 10,
-  //                                         ),
-  //                                         const Divider(),
-  //                                         Text(
-  //                                           'Application of Computer in Fabric Manufacturing (ACFM)',
-  //                                           style: GoogleFonts.roboto(
-  //                                             textStyle: const TextStyle(
-  //                                               fontSize: 18,
-  //                                               color: Color.fromARGB(
-  //                                                   255, 194, 202, 241),
-  //                                               fontWeight: FontWeight.w400,
-  //                                             ),
-  //                                           ),
-  //                                           textAlign: TextAlign.center,
-  //                                         ),
-  //                                       ],
-  //                                     ),
-  //                                   ),
-  //                                   const SizedBox(
-  //                                     height: 10,
-  //                                   ),
-  //                                   Container(
-  //                                     padding: const EdgeInsets.all(16.0),
-  //                                     decoration: BoxDecoration(
-  //                                       color: const Color.fromARGB(
-  //                                           255, 133, 119, 119),
-  //                                       borderRadius: BorderRadius.circular(5),
-  //                                     ),
-  //                                     child: Column(
-  //                                       children: [
-  //                                         Text(
-  //                                           '2:00PM - 3:40PM',
-  //                                           style: GoogleFonts.roboto(
-  //                                             textStyle: const TextStyle(
-  //                                               fontSize: 18,
-  //                                               color: Color.fromARGB(
-  //                                                   255, 194, 202, 241),
-  //                                               fontWeight: FontWeight.w400,
-  //                                             ),
-  //                                           ),
-  //                                         ),
-  //                                         const SizedBox(
-  //                                           height: 10,
-  //                                         ),
-  //                                         const Divider(),
-  //                                         Text(
-  //                                           'Fabric Structure & Design (FSD)',
-  //                                           style: GoogleFonts.roboto(
-  //                                             textStyle: const TextStyle(
-  //                                               fontSize: 18,
-  //                                               color: Color.fromARGB(
-  //                                                   255, 194, 202, 241),
-  //                                               fontWeight: FontWeight.w400,
-  //                                             ),
-  //                                           ),
-  //                                           textAlign: TextAlign.center,
-  //                                         ),
-  //                                       ],
-  //                                     ),
-  //                                   ),
-  //                                 ],
-  //                               ),
-  //                             ],
-  //                           ),
-  //                         ),
-  //                       ),
-  //                     )
-  //                   ],
-  //                 )
-  //               ],
-  //             ),
-  //           ),
-  //         ),
-  //       ],
-  //     ),
-    
