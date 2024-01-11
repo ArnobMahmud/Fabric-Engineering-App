@@ -72,13 +72,6 @@ import 'screen/splash.dart';
 
 void main() {
   runApp(
-    // MultiProvider(
-    //   providers: [
-    //     ChangeNotifierProvider(
-    //       create: (context) => ThemeProvider(),
-    //     ),
-    //   ],
-    // ),
     const MyApp(),
   );
 }
@@ -89,7 +82,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
-     SystemChrome.setPreferredOrientations(
+    SystemChrome.setPreferredOrientations(
       [
         DeviceOrientation.portraitUp,
       ],
@@ -160,15 +153,15 @@ class MyApp extends StatelessWidget {
         '/nwvn': (context) => const NwvnResources(),
         '/tt': (context) => const TTResources(),
         '/es': (context) => const ESResources(),
-        '/not': (context) => NoticePage(),
-        '/lab1': (context) =>const Level1Term1Lab(),
-        '/lab2': (context) =>const Level1Term2Lab(),
-        '/lab3': (context) =>const Level2Term1Lab(),
-        '/lab4': (context) =>const Level2Term2Lab(),
-        '/lab5': (context) =>const Level3Term1Lab(),
-        '/lab6': (context) =>const Level3Term2Lab(),
-        '/lab7': (context) =>const Level4Term1Lab(),
-        '/lab8': (context) =>const Level4Term2Lab(),
+        '/not': (context) => const NoticePage(),
+        '/lab1': (context) => const Level1Term1Lab(),
+        '/lab2': (context) => const Level1Term2Lab(),
+        '/lab3': (context) => const Level2Term1Lab(),
+        '/lab4': (context) => const Level2Term2Lab(),
+        '/lab5': (context) => const Level3Term1Lab(),
+        '/lab6': (context) => const Level3Term2Lab(),
+        '/lab7': (context) => const Level4Term1Lab(),
+        '/lab8': (context) => const Level4Term2Lab(),
       },
     );
   }

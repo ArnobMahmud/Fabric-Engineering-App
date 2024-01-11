@@ -44,15 +44,15 @@ class ArchiveCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 30,
+                height: 20,
               ),
               SvgPicture.asset(
                 imgData!,
                 height: 100,
                 width: 100,
               ),
-              const Spacer(
-                flex: 1,
+              const SizedBox(
+                height: 40,
               ),
               Text(
                 title!,
@@ -63,9 +63,6 @@ class ArchiveCard extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
                 maxLines: 2,
-              ),
-              const Spacer(
-                flex: 1,
               ),
             ],
           ),

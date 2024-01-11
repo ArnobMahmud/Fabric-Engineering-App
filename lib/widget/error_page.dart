@@ -22,7 +22,7 @@ class ErrorPage extends StatelessWidget {
           Text(
             "No Data Available",
             style: GoogleFonts.roboto(
-              fontSize: 30,
+              fontSize: 22,
               fontWeight: FontWeight.w400,
               color:const Color.fromARGB(159, 80, 58, 88),
             ),

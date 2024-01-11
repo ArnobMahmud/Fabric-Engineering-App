@@ -35,9 +35,9 @@ class SemesterSegment extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Color.fromARGB(255, 173, 172, 172),
-                  spreadRadius: 3,
-                  blurRadius: 3,
-                  offset: Offset(0, 3), // changes position of shadow
+                  spreadRadius: 1,
+                  blurRadius: 5,
+                  offset: Offset(1, 3), // changes position of shadow
                 ),
               ],
             ),

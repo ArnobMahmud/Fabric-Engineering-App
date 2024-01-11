@@ -21,7 +21,7 @@ class Level4Term2Lab extends StatelessWidget {
       ),
       body: const HandleUpdate(
         message: 'Not added yet!',
-        img: 'images/warn.svg',
+        img: 'images/sun.svg',
       ),
     );
   }

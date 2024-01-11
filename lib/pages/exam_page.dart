@@ -1,5 +1,5 @@
 import 'package:fabric_engineering_app/db/exam_data.dart';
-import 'package:fabric_engineering_app/widget/exam_card.dart';
+import 'package:fabric_engineering_app/widget/archive_card.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -40,7 +40,7 @@ class ExamPage extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 10,
           crossAxisCount: 2,
-          childAspectRatio: aspectRatio / .9,
+          childAspectRatio: aspectRatio / .8,
         ),
         itemBuilder: (BuildContext context, int index) {
           return ArchiveCard(

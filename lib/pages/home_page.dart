@@ -49,48 +49,6 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      // drawer: Drawer(
-      //   backgroundColor: Theme.of(context).colorScheme.background,
-      //   child: ListView(
-      //     children: [
-      //       DrawerHeader(
-      //         child: Text(
-      //           'F A B R I C\nE N G I N E E R I N G\nR E S O U R C E S',
-      //           textAlign: TextAlign.center,
-      //           style: TextStyle(
-      //             fontSize: 18,
-      //             color: Theme.of(context).colorScheme.inversePrimary,
-      //           ),
-      //         ),
-      //       ),
-      //       DrawerTile(
-      //         icon: Icons.settings,
-      //         title: 'Setting',
-      //         ontap: () {
-      //           Navigator.push(
-      //             context,
-      //             MaterialPageRoute(
-      //               builder: (context) => const Settings(),
-      //             ),
-      //           );
-      //         },
-      //       ),
-      //       DrawerTile(
-      //         icon: Icons.manage_accounts_sharp,
-      //         title: 'Developer',
-      //         ontap: () {
-      //           Navigator.push(
-      //             context,
-      //             MaterialPageRoute(
-      //               builder: (context) => const DeveloperPage(),
-      //             ),
-      //           );
-      //         },
-      //       ),
-      //     ],
-      //   ),
-      // ),
-
       body: Column(
         children: [
           Stack(
@@ -214,7 +172,7 @@ class HomePage extends StatelessWidget {
                     crossAxisSpacing: 15,
                     mainAxisSpacing: 10,
                     crossAxisCount: 2,
-                    childAspectRatio: aspectRatio /.9,
+                    childAspectRatio: aspectRatio / .85,
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     return Category(
@@ -233,3 +191,45 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+   /*   drawer: Drawer(
+        backgroundColor: Theme.of(context).colorScheme.background,
+        child: ListView(
+          children: [
+            DrawerHeader(
+              child: Text(
+                'F A B R I C\nE N G I N E E R I N G\nR E S O U R C E S',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Theme.of(context).colorScheme.inversePrimary,
+                ),
+              ),
+            ),
+            DrawerTile(
+              icon: Icons.settings,
+              title: 'Setting',
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Settings(),
+                  ),
+                );
+              },
+            ),
+            DrawerTile(
+              icon: Icons.manage_accounts_sharp,
+              title: 'Developer',
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DeveloperPage(),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),  */

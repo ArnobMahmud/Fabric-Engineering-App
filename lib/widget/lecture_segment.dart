@@ -77,7 +77,7 @@ class _LectureSegmentState extends State<LectureSegment> {
                             fontWeight: FontWeight.w500,
                             color: const Color.fromARGB(159, 87, 68, 94),
                           ),
-                          maxLines: 2,
+                          maxLines: 3,
                           overflow: TextOverflow.clip,
                         ),
                       ),

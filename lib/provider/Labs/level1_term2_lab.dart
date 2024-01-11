@@ -21,7 +21,7 @@ class Level1Term2Lab extends StatelessWidget {
       ),
       body: const HandleUpdate(
         message: 'Semester end!',
-        img: 'images/warn.svg',
+        img: 'images/sun.svg',
       ),
     );
   }

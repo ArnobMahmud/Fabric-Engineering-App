@@ -46,7 +46,7 @@ class Category extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 20,
+                height: 5,
               ),
               SvgPicture.asset(
                 imgData!,
@@ -66,7 +66,7 @@ class Category extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: 10,
+                height: 5,
               ),
               Text(
                 subTitle!,
