@@ -12,12 +12,7 @@ class CourseSegment extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Future.delayed(
-          const Duration(seconds: 1),
-          () {
-            Navigator.pushNamed(context, info!.nav!);
-          },
-        );
+        Navigator.pushNamed(context, info!.nav!);
       },
       child: Container(
         margin: const EdgeInsets.fromLTRB(0, 5, 10, 10),
@@ -67,7 +62,6 @@ class CourseSegment extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                             color: const Color.fromARGB(159, 87, 68, 94),
                           ),
-                          maxLines: 2,
                           overflow: TextOverflow.clip,
                         ),
                       ),

@@ -9,6 +9,14 @@ import 'pages/level3_page.dart';
 import 'pages/level4_page.dart';
 import 'pages/notice_page.dart';
 import 'pages/resources_page.dart';
+import 'provider/Exams/level1_term1_exam.dart';
+import 'provider/Exams/level1_term2_exam.dart';
+import 'provider/Exams/level2_term1_exam.dart';
+import 'provider/Exams/level2_term2_exam.dart';
+import 'provider/Exams/level3_term1_exam.dart';
+import 'provider/Exams/level3_term2_exam.dart';
+import 'provider/Exams/level4_term1_exam.dart';
+import 'provider/Exams/level4_term2_exam.dart';
 import 'provider/Labs/level1_term1_lab.dart';
 import 'provider/Labs/level1_term2_lab.dart';
 import 'provider/Labs/level2_term1_lab.dart';
@@ -160,6 +168,14 @@ class MyApp extends StatelessWidget {
         '/lab6': (context) => const Level3Term2Lab(),
         '/lab7': (context) => const Level4Term1Lab(),
         '/lab8': (context) => const Level4Term2Lab(),
+        '/exam1': (context) => const Level1Term1Exam(),
+        '/exam2': (context) => const Level1Term2Exam(),
+        '/exam3': (context) => const Level2Term1Exam(),
+        '/exam4': (context) => const Level2Term2Exam(),
+        '/exam5': (context) => const Level3Term1Exam(),
+        '/exam6': (context) => const Level3Term2Exam(),
+        '/exam7': (context) => const Level4Term1Exam(),
+        '/exam8': (context) => const Level4Term2Exam(),
       },
     );
   }

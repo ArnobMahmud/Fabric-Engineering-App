@@ -38,7 +38,7 @@ class _FutureWidgetState extends State<FutureWidget> {
   void dispose() {
     sub.cancel();
     super.dispose();
-  }
+  } 
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +70,9 @@ class _FutureWidgetState extends State<FutureWidget> {
                   ),
                 );
               } else {
-                return const ErrorScreen();
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
               }
             },
           )

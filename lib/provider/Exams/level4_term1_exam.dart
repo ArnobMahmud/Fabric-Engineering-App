@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../widget/no_class.dart';
 
-class Level1Term1Exam extends StatelessWidget {
-  const Level1Term1Exam({super.key});
+class Level4Term1Exam extends StatelessWidget {
+  const Level4Term1Exam({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Level1Term1Exam extends StatelessWidget {
         ),
       ),
       body: const HandleUpdate(
-        message: 'Semester end!',
+        message: 'Not added yet!',
         img: 'images/sun.svg',
       ),
     );

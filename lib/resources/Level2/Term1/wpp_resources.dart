@@ -20,7 +20,7 @@ class _WPPResourcesState extends State<WPPResources> {
       ),
       body: Center(
         child: FutureWidget(
-          endpoint: 'wpp2-1',
+          endpoint: 'wvgpp2-1',
         ),
       ),
     );

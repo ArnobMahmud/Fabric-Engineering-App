@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../widget/no_class.dart';
 
-class Level1Term1Exam extends StatelessWidget {
-  const Level1Term1Exam({super.key});
+class Level2Term2Exam extends StatelessWidget {
+  const Level2Term2Exam({super.key});
 
   @override
   Widget build(BuildContext context) {

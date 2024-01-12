@@ -31,7 +31,7 @@ class LabScheduleCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16.0),
         decoration: BoxDecoration(
-          color: const Color(0xffcfbaba),
+          color: const Color(0xffb9b1b6),
           borderRadius: BorderRadius.circular(15),
         ),
         child: Column(
@@ -47,7 +47,7 @@ class LabScheduleCard extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -56,7 +56,7 @@ class LabScheduleCard extends StatelessWidget {
                 SingleChildScrollView(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 128, 81, 81),
+                      color: const Color(0xff4c4b5c),
                       borderRadius: BorderRadius.circular(16),
                     ),
                     //color: Colors.red,
@@ -193,7 +193,7 @@ class LabScheduleCard extends StatelessWidget {
                                   style: GoogleFonts.roboto(
                                     textStyle: const TextStyle(
                                       fontSize: 18,
-                                      color: Color.fromARGB(255, 24, 40, 54),
+                                      color: Color.fromARGB(255, 194, 202, 241),
                                       fontWeight: FontWeight.w400,
                                     ),
                                   ),
