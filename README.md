@@ -18,10 +18,10 @@ Bangladesh University of Textiles (BUTEX) Fabric Manufacturing Engineering (FME)
   </tr>
   <tr>  
     <td>
-      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/c4437a27-aa95-4ccf-aba1-3d043cfdaeb7">
+      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/d07974d7-aea8-4b10-94c4-97e29532544f">
     </td> 
     <td>
-      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/6b49dc22-ce07-49ae-8eb6-c66c63195615">
+      <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/c06f9fa1-6f01-4af6-92e4-9732388b3d86">
     </td>
     <td>
       <img src="https://github.com/ArnobMahmud/Fabric-Engineering-App/assets/60808266/3f71b2a7-4dc6-4721-aafa-5ee76acd6464">
