@@ -10,6 +10,7 @@ class Level2Page extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffe0e0e0),
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

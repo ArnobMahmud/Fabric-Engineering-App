@@ -20,6 +20,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 249, 213),
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: const Color.fromARGB(255, 255, 249, 213),
         centerTitle: true,
         title: Text(
@@ -123,7 +124,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(14),
-                    width: width * .60,
+                    width: width * .65,
                     // color: Colors.red,
                     child: const Row(
                       children: [
@@ -143,7 +144,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     //color: Colors.blue,
                     height: 220,
-                    width: width * .40,
+                    width: width * .35,
                     child: SvgPicture.asset('images/snow.svg'),
                   ),
                 ],

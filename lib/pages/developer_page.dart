@@ -9,6 +9,7 @@ class DeveloperPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffe2dfd2),
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -39,6 +40,7 @@ class DeveloperPage extends StatelessWidget {
                   'images/logo.png',
                   height: 150,
                   width: 150,
+                  fit: BoxFit.cover,
                 ),
                 const SizedBox(
                   height: 10,

@@ -13,6 +13,7 @@ class LabPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffe2dfd2),
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: const Color(0xffe2dfd2),
         leading: IconButton(
           icon: const Icon(

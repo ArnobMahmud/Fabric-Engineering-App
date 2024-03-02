@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     Future.delayed(
       const Duration(
-        seconds: 3,
+        seconds: 5,
       ),
       () {
         Navigator.pushReplacementNamed(context, '/home');
@@ -24,12 +24,18 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: const Color(0xffece4dc),
       body: Center(
         child: Column(
-          crossAxisAlignment : CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Spacer(),
-            SvgPicture.asset(
-              'images/sem.svg',
+            // SvgPicture.asset(
+            //   'images/sem.svg',
+            //   height: 150,
+            //   width: 150,
+            //   fit: BoxFit.cover,
+            // ),
+            Image.asset(
+              'images/fabric.png',
               height: 150,
               width: 150,
               fit: BoxFit.cover,
@@ -61,6 +67,20 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 5),
+            Text(
+              'version ~ 1.0.0',
+              style: GoogleFonts.roboto(
+                textStyle: const TextStyle(
+                  color: Color.fromARGB(255, 40, 30, 62),
+                  fontSize: 16,
+                  letterSpacing: 0.1,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 5),
           ],
         ),
       ),
